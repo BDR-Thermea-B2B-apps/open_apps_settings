@@ -17,3 +17,7 @@
 !.vscode/launch.json
 
 build/
+
+# Swift Package Manager
+.build/
+.swiftpm/

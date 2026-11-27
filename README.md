@@ -4,12 +4,30 @@ A Flutter Plugin for opening phone settings from Android and iOS apps. It is a f
 
 This fork fixes a bug in the forked repository that caused the plugin to send a `result.success()` to all MethodChannels, instead of only its own.
 
+## Requirements
+
+- Flutter 3.41 or later (Dart 3.11 or later).
+- iOS 13.0 or later.
+- Swift Package Manager builds require Xcode 15 or later (Swift tools 5.9).
+
+Both Swift Package Manager and CocoaPods are supported on iOS. Flutter discovers
+this plugin's Swift package automatically when Swift Package Manager is enabled
+in the consuming app; no manual Xcode package dependency is needed.
+
+To enable Swift Package Manager, run:
+
+```bash
+flutter config --enable-swift-package-manager
+```
+
+Set your app's iOS deployment target to 13.0 or later for either package manager.
+
 ## Installation
 
 Add following dependency in pubspec.yaml file:
 
 ```yaml
-open_apps_settings: ^0.3.0
+open_apps_settings_fork: ^0.3.0
 ```
 
 Install by running:
@@ -23,8 +41,8 @@ flutter pub get
 Usage implementation using a ElevatedButton 'onPressed' event.
 
 ```Dart
-import 'package:open_apps_settings/open_apps_settings.dart';
-import 'package:open_apps_settings/settings_enum.dart';
+import 'package:open_apps_settings_fork/open_apps_settings.dart';
+import 'package:open_apps_settings_fork/settings_enum.dart';
 
 Widget build(BuildContext context) {
   return Row(

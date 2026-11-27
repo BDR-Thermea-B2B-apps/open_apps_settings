@@ -1,12 +1,12 @@
 import Flutter
 import UIKit
 
-public class SwiftOpenAppsSettingsForkPlugin: NSObject, FlutterPlugin {
+public class OpenAppsSettingsForkPlugin: NSObject, FlutterPlugin {
       var myResult:FlutterResult? = nil
       var isSettingOpen:Bool = false
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "open_apps_settings", binaryMessenger: registrar.messenger())
-    let instance = SwiftOpenAppsSettingsForkPlugin()
+    let instance = OpenAppsSettingsForkPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
     registrar.addApplicationDelegate(instance)
   }

@@ -1,3 +1,9 @@
+## Unreleased
+
+* Add iOS Swift Package Manager support while retaining CocoaPods support.
+* Raise minimum versions to Flutter 3.41, Dart 3.11, and iOS 13.0.
+* Replace the Objective-C registration shim with a shared Swift plugin class.
+
 ## 0.0.1
 
 * Initial release.
