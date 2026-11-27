@@ -31,3 +31,7 @@
 ## 0.3.0
 
 * Add missing reference.
+
+# 0.3.1
+
+* Add support for Swift Package Manager
